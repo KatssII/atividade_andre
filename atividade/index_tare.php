@@ -1,10 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
     <head>
-    <link rel="shortcut icon" href="frog-head.png" type="image/png">
+    <link rel="shortcut icon" href="img/frog-head.png" type="image/png">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title>Cadastro de Tarefas</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <style>
+            body {
+            background-image: url('img/sapo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -19,17 +26,16 @@
                 </div>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
-                        <label for="">Prazo: </label>
+                        <label for="">Prazo de Entrega: </label>
                         <input type="date" name="prazo" id="" class="form-control">
                     </div>
                 </div>
                 <br>
                 <div class="form-group offset-md-3">
                     <div class="col-md-6">
-                    <div class="col-md-6">
                         <input type="submit" class="btn btn-success" value="CADASTRAR TAREFA">
-                        <a href="tabela_tare.php" type="button" class="btn btn-primary float-end">Tabela de Tarefas</a>
-                        <div class="col-md-6">
+                        <a href="tabela_tare.php" type="button" class="btn btn-primary float-end">Tarefas Cadastradas</a>
+                    </div>
                     </div>
                 </div>
             </form>

@@ -1,9 +1,8 @@
 <?php
-    require("protected.php");
     require("conn.php");
 
     $tabela_tare = $pdo->prepare("SELECT id_tare, tarefa, prazo
-    FROM lista;");
+    FROM tb_lista;");
     $tabela_tare->execute();
     $rowTabela = $tabela_tare->fetchAll();
     
@@ -22,6 +21,13 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title>Lista de tarefas</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <style>
+            body {
+            background-image: url('img/sapo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -52,7 +58,7 @@
             ?>
         </tbody>
         </table>
-        <a href="index_tare.php" class="btn btn-primary">CADASTRAR TAREFA</a>
+        <a href="index_tare.php" class="btn btn-primary">TAREFA NOVA</a>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
